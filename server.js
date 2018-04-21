@@ -8,7 +8,7 @@ const cors = require('cors');
 const basePath = '/api';
 const PORT = 8080;
 const HOST = "0.0.0.0"
-mongoose.connect('mongodb://mongodb')
+mongoose.connect("mongodb://mongo-0.mongo,mongo-1.mongo,mongo-2.mongo:27017/dbname_?")
   .then(()=>{
     console.log('Backend started');
   })
