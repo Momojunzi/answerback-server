@@ -10,7 +10,7 @@ const PORT = 8080;
 const HOST = "0.0.0.0";
 const config = require('./config/dbconfig')
 
-mongoose.connect(config.db);
+mongoose.connect(config.db)
   .then(()=>{
     console.log('Backend started');
   })
