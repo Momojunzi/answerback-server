@@ -28,5 +28,5 @@ app.use(bodyParser.json());
 app.use(basePath, routes);
 
 //execute app
-app.listen(PORT, HOST);
+app.listen(PORT);
 console.log(`running on port: ${PORT}`);
