@@ -7,8 +7,10 @@ const cors = require('cors');
 //constants
 const basePath = '/api';
 const PORT = 8080;
-const HOST = "0.0.0.0"
-mongoose.connect("mongodb://momojunzi:M01279111h%24@cluster0-shard-00-00-lsqzg.mongodb.net:27017,cluster0-shard-00-01-lsqzg.mongodb.net:27017,cluster0-shard-00-02-lsqzg.mongodb.net:27017/answerback?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin")
+const HOST = "0.0.0.0";
+const config = require('./config/dbconfig')
+
+mongoose.connect(config.db);
   .then(()=>{
     console.log('Backend started');
   })
